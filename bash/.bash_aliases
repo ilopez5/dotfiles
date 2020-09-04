@@ -1,0 +1,1 @@
+alias guntar='tar -xzvf'

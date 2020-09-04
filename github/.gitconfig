@@ -1,0 +1,5 @@
+[user]
+	email = ilopez5@hawk.iit.edu
+	name = ilopez5
+[alias]
+	tree = log --all --graph --decorate --oneline --simplify-by-decoration
