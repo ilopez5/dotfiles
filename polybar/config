@@ -240,7 +240,7 @@ type = internal/battery
 full-at = 73
 
 ; $ ls -1 /sys/class/power_supply/
-battery = BAT0
+battery = BAT1
 adapter = AC
 
 ; formats
