@@ -87,8 +87,8 @@ end
 
 # generate invoice for Canopy
 function generateInvoice
-	cd $HOME/documents/sites/canopy/invoices
-	$HOME/documents/sites/canopy/invoices/./invoice.sh
+	cd $HOME/documents/work/canopy/invoices
+	$HOME/documents/work/canopy/invoices/./invoice.sh
 end
 
 
