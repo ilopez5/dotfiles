@@ -179,7 +179,7 @@ format-connected = <label-connected>
 ; labels
 label-connected =   %essid%
 label-connected-foreground = #00cc00
-label-disconnected = 睊-
+label-disconnected = 睊
 label-disconnected-foreground = #ff0000
 
 
@@ -265,17 +265,17 @@ label-discharging-foreground = #FFFFFF
 
 ; ramp capacity colors
 ramp-capacity-0-foreground = #ff0000
-ramp-capacity-1-foreground = #ff0000
+ramp-capacity-1-foreground = #e6e600
 ramp-capacity-2-foreground = #e6e600
-ramp-capacity-3-foreground = #e6e600
+ramp-capacity-3-foreground = #00ff40
 ramp-capacity-4-foreground = #00ff40
 
 ; animation charging colors
-animation-charging-0-foreground = #ff0000
-animation-charging-1-foreground = #ff0000
-animation-charging-2-foreground = #e6e600
-animation-charging-3-foreground = #e6e600
-animation-charging-4-foreground = #00ff40
+animation-charging-0-foreground = #4dd2ff
+animation-charging-1-foreground = #4dd2ff
+animation-charging-2-foreground = #4dd2ff
+animation-charging-3-foreground = #4dd2ff
+animation-charging-4-foreground = #4dd2ff
 
 ; ramp capacity
 ramp-capacity-0 = 
