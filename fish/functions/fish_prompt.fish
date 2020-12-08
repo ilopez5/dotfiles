@@ -14,3 +14,9 @@ function fish_prompt
 	printf '> '
 	set_color normal
 end
+
+function fish_right_prompt
+	set_color 404040
+	date "+%H:%M:%S"
+	set_color normal
+end

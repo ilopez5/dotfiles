@@ -3,3 +3,5 @@
 	name = ilopez5
 [alias]
 	tree = log --all --graph --decorate --oneline --simplify-by-decoration
+[core]
+	editor = nvim

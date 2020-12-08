@@ -84,6 +84,11 @@ function sizeof
 	du -sh $argv
 end
 
+# make clean and make again
+function remake
+	make clean && make
+end
+
 
 # generate invoice for Canopy
 function generateInvoice

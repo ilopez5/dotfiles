@@ -63,8 +63,8 @@ underline-color = ${bar/bottom.underline-color}
 overline-size = ${bar/bottom.overline-size}
 overline-color = ${bar/bottom.overline-color}
 
-border-bottom.= ${bar/bottom.border-bottom}
-border-bottom.color = ${bar/bottom.border-bottom-color}
+; border-bottom = ${bar/bottom.border-bottom}
+; border-bottom.color = ${bar/bottom.border-bottom-color}
 
 spacing = ${bar/bottom.spacing}
 padding-left = ${bar/bottom.padding-left}
