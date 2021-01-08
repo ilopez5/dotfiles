@@ -57,7 +57,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-	export PS1="\[$(tput bold)\]\[\033[38;5;243m\]\h\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;15m\]:\[$(tput bold)\]\[$(tput sgr0)\]\[\033[38;5;81m\]\w\n\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;15m\]\[$(tput bold)\]\[$(tput sgr0)\]\[\033[38;5;184m\]Ω \[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;241m\]>\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;240m\]>\[\033[38;5;245m\] \[$(tput sgr0)\]"	
+	export PS1="\[$(tput bold)\]\[\033[38;5;81m\]\u\[$(tput sgr0)\]\[\033[38;5;252m\]@\[$(tput sgr0)\]\[$(tput bold)\]\[\033[38;5;243m\]\h\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;252m\]:\[$(tput bold)\]\[$(tput sgr0)\]\[\033[38;5;81m\]\w\n\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;15m\]\[$(tput bold)\]\[$(tput sgr0)\]\[\033[38;5;184m\]Ω \[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;241m\]>\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;240m\]>\[\033[38;5;245m\] \[$(tput sgr0)\]"	
 else
 	PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
