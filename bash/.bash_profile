@@ -8,6 +8,4 @@ if systemctl -q is-active graphical.target && [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]
   exec startx
 fi
 
-export ZIPBOOKS_PASS='knut9POOK-aunk'
-
 export PATH="$HOME/.cargo/bin:$PATH"
