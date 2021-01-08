@@ -1,5 +1,9 @@
 # set prompt with omega symbol, new line, and desired coloring
 function fish_prompt
+	set_color 64c8fa
+	printf '%s' (whoami)
+	set_color cecece
+	printf '@'
 	set_color 939393
 	printf '%s' (hostname)
 	set_color cecece

@@ -56,17 +56,6 @@ function record
 	asciinema rec
 end
 
-
-# read letter
-function readletter
-	ssh plankton cat ~/mailbox/(date "+%-m-%d-%y")
-end
-
-# check if my day
-function isitmyday
-	set dateformat (date "+%-m-%d-%y")
-end
-
 # send wakeonlan packet to leviathan
 function wakeleviathan
 	ssh plankton wakeonlan -p 9 D8:CB:8A:95:11:E6
@@ -89,6 +78,10 @@ function remake
 	make clean && make
 end
 
+# mounts seashell
+function seashell
+	udisksctl mount -b /dev/sdb1
+end
 
 # generate invoice for Canopy
 function generateInvoice

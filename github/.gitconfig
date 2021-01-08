@@ -5,3 +5,5 @@
 	tree = log --all --graph --decorate --oneline --simplify-by-decoration
 [core]
 	editor = nvim
+[init]
+	defaultBranch = master
