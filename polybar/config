@@ -42,7 +42,7 @@ font-5 = Termsynu:size=7;0
 
 modules-left = i3
 modules-center = xwindow
-modules-right = wireless-network battery volume memory fs-root clock
+modules-right = nordvpn wireless-network battery volume memory fs-root clock
 
 wm-restack = i3
 
@@ -90,7 +90,7 @@ wm-restack = ${bar/bottom.wm-restack}
 [module/fs-root]
 type = internal/fs
 mount-0 = /
-label-mounted =   %free%
+label-mounted =  %free%
 label-mounted-foreground = #cccccc
 
 
@@ -142,27 +142,12 @@ label-visible-padding = 4
 [module/memory]
 type = internal/memory
 interval = 1
-format = <label> <bar-used>
+format = <label>
 
 ; label
-label = RAM
+label = RAM %percentage_used%%
 label-font = 0
-label-foreground = #b3b3b3
-
-bar-used-width = 10
-bar-used-gradient = true
-bar-used-foreground-0 = #449f3d
-bar-used-foreground-1 = #2f8419
-bar-used-foreground-2 = #f5a70a
-bar-used-foreground-3 = #ed5456
-bar-used-indicator = █
-bar-used-indicator-font = 5
-bar-used-indicator-foreground = #fff
-bar-used-fill = █
-bar-used-fill-font = 5
-bar-used-empty = █
-bar-used-empty-font = 5
-bar-used-empty-foreground = #44
+label-foreground = #ffadff
 
 
 
@@ -172,15 +157,19 @@ type = internal/network
 interface = wlan0
 interval = 2.0
 ping-interval = 0
-
 ; format
 format-connected = <label-connected>
-
 ; labels
-label-connected =   %essid%
+label-connected =  %essid%
 label-connected-foreground = #00cc00
 label-disconnected = 睊
 label-disconnected-foreground = #ff0000
+
+
+[module/nordvpn]
+type = custom/script
+exec = ~/.config/polybar/nordvpn.sh
+interval = 5
 
 
 
@@ -202,9 +191,7 @@ label-disconnected-foreground = #66
 type = internal/date
 interval = 1
 format-padding = 2
-format-background = #0d0d0d
-format-foreground = #fff
-date = %%{F#bb}%D%{F-}  %%{F#ee}%l:%M:%S %p%{F-}
+date = %%{F#878787}%D%{F-} %%{F#ee}%l:%M:%S %p%{F-}
 
 
 
@@ -244,9 +231,9 @@ battery = BAT1
 adapter = AC
 
 ; formats
-format-full = <ramp-capacity> <label-full>
-format-charging = <animation-charging> <label-charging>
-format-discharging = <ramp-capacity> <label-discharging>
+format-full = <ramp-capacity><label-full>
+format-charging = <animation-charging><label-charging>
+format-discharging = <ramp-capacity><label-discharging>
 
 ; labels
 label-full = %percentage%%
