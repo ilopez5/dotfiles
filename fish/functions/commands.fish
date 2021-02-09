@@ -86,7 +86,7 @@ end
 # generate invoice for Canopy
 function generateInvoice
 	cd $HOME/documents/work/canopy/invoices
-	$HOME/documents/work/canopy/invoices/./invoice.sh
+	/bin/python3 $HOME/documents/work/canopy/invoices/{invoice.py,zipbooks.env,archives}
 end
 
 

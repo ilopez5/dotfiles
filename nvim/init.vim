@@ -1,14 +1,15 @@
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath = &runtimepath
-source ~/.vimrc
+
+" vimrc section
+set mouse=a
+map <ScrollWheelUp> <Up>
+map <ScrollWheelDown> <Down>
+nnoremap ; :
+set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
+set number
 
 call plug#begin('~/.vim/plugged')
-" Deoplete Section
-Plug 'shougo/deoplete.nvim'             " main
-" Plug 'zchee/deoplete-jedi'              " python - good
-Plug 'zchee/deoplete-clang'             " clang  - good
-Plug 'vim-scripts/dbext.vim'
-
 Plug 'scrooloose/nerdTree'              " file explorer
 Plug 'scrooloose/nerdcommenter'         " commenting powers
 Plug 'ajh17/spacegray.vim'              " color scheme
@@ -24,9 +25,6 @@ filetype plugin on
 
 " shows closing delimiter
 let g:pear_tree_repeatable_expand = 0
-
-" starts deoplete
-let g:deoplete#enable_at_startup = 1
 
 " binds nerdtree toggle
 nmap <C-n> :NERDTreeToggle<CR>
