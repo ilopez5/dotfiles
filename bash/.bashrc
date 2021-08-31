@@ -121,3 +121,5 @@ clear
 if [ -f "~/.envvars" ];then
 	. ~/.envvars
 fi
+
+export PATH=$PATH:/home/ish/.local/bin

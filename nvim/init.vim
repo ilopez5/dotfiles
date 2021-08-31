@@ -6,7 +6,7 @@ set mouse=a
 map <ScrollWheelUp> <Up>
 map <ScrollWheelDown> <Down>
 nnoremap ; :
-set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
+set tabstop=4 softtabstop=4 shiftwidth=4 expandtab
 set number
 
 call plug#begin('~/.vim/plugged')
@@ -16,7 +16,6 @@ Plug 'ajh17/spacegray.vim'              " color scheme
 Plug 'tmsvg/pear-tree'                  " delimiter pairing
 Plug 'itchyny/lightline.vim'            " lightweight bar
 Plug 'ryanoasis/vim-devicons'           " icons for nerdtree
-Plug 'rust-lang/rust.vim'               " rust-lang
 call plug#end()
 
 colorscheme spacegray
