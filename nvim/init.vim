@@ -16,9 +16,14 @@ Plug 'ajh17/spacegray.vim'              " color scheme
 Plug 'tmsvg/pear-tree'                  " delimiter pairing
 Plug 'itchyny/lightline.vim'            " lightweight bar
 Plug 'ryanoasis/vim-devicons'           " icons for nerdtree
+Plug 'cespare/vim-toml'
 call plug#end()
 
 colorscheme spacegray
+let g:spacegray_use_italics = 1
+highlight Normal ctermbg=none
+highlight NonText ctermbg=none
+
 
 filetype plugin on
 

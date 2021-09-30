@@ -1,0 +1,45 @@
+add_newline = false
+
+[directory]
+truncation_length = 3
+truncate_to_repo = false
+style = "#64c8fa"
+
+[status]
+# shows exit code of previous command
+disabled = false
+format = "\\[[$status]($style)\\] "
+
+[username]
+format = "[$user](#64c8fa)"
+style_user = ""
+show_always = true
+
+[hostname]
+format = "[@](#cecece)[$hostname](#adadad) "
+style = ""
+ssh_only = false
+
+[line_break]
+disabled = false
+
+[character]
+success_symbol = "[\u03A9](bold green) [>](#878787)[>](#adadad)"
+error_symbol = "[\u03A9](bold red) [>](#878787)[>](#adadad)"
+
+[cmd_duration]
+min_time = 60000
+
+[[battery.display]]
+threshold = 10
+charging_symbol = ""
+
+[git_status]
+disabled = true
+
+[python]
+format = 'via [${symbol}${pyenv_prefix}(\($virtualenv\) )]($style)'
+disabled = true
+
+[java]
+disabled = true
