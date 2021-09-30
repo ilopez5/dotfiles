@@ -6,15 +6,8 @@ function vim --description 'alias vim=nvim'
 end
 
 alias du="du -sh"
+alias sizeof="du -sh"
 alias guntar="tar -xzvf"
 alias htop="htop -t"
-alias nmgui="nm-connection-editor"
-
-function cat
-	bat $argv;
-end
-
-function rustcheck
-	rustfmt --check $argv;
-end
+alias remake="make clean && make"
 
