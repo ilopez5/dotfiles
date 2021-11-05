@@ -25,7 +25,7 @@ disabled = false
 
 [character]
 success_symbol = "[\u03A9](bold green) [>](#878787)[>](#adadad)"
-error_symbol = "[\u03A9](bold red) [>](#878787)[>](#adadad)"
+error_symbol = "[\u03A9](bold green) [>](#878787)[>](#adadad)"
 
 [cmd_duration]
 min_time = 60000
@@ -42,4 +42,10 @@ format = 'via [${symbol}${pyenv_prefix}(\($virtualenv\) )]($style)'
 disabled = true
 
 [java]
+disabled = true
+
+[cmake]
+disabled = true
+
+[aws]
 disabled = true
